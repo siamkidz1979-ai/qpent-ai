@@ -29,6 +29,8 @@ services:
       QPENT_EDITION: free
       DATABASE_URL: postgresql://qpent:${DB_PASS:-qpent_local_dev}@qpent-db:5432/qpent
       DB_BACKEND: postgres
+      # "Upgrade to Pro" links in the app point here
+      QPENT_UPGRADE_URL: https://www.siamlms.online
       # Optional: point at your own Ollama instead of adding a cloud API key.
       # OLLAMA_URL: http://host.docker.internal:11434
       # Optional: change the free per-scan IP cap (default 5).

@@ -10,7 +10,7 @@ QPent drives real Kali tools with an AI agent that plans, scans, and explains
 findings for you. The Community edition is free for authorized security testing
 of systems **you own or are permitted to test**.
 
-[Upgrade to Pro →](https://qpent.siamlms.online)
+[Upgrade to Pro →](https://www.siamlms.online)
 
 </div>
 
@@ -85,7 +85,7 @@ Then pick your model in **Settings** and start a scan.
 | Knowledge-base (RAG) augmented analysis | — | ✅ |
 | Support & updates | community | priority |
 
-**[See Pro plans → qpent.siamlms.online](https://qpent.siamlms.online)**
+**[See Pro plans → qpent.siamlms.online](https://www.siamlms.online)**
 
 ---
 
@@ -107,7 +107,7 @@ Ollama model for free.
 **Is my data sent anywhere?** Scans run locally in your container. Only your LLM
 calls go to whichever provider *you* configure.
 
-**Can I scan more than 5 IPs?** That's a Pro feature — [upgrade here](https://qpent.siamlms.online).
+**Can I scan more than 5 IPs?** That's a Pro feature — [upgrade here](https://www.siamlms.online).
 
 ---
 
