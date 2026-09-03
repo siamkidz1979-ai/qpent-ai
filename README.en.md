@@ -85,7 +85,7 @@ Then pick your model in **Settings** and start a scan.
 | Knowledge-base (RAG) augmented analysis | — | ✅ |
 | Support & updates | community | priority |
 
-**[See Pro plans → qpent.siamlms.online](https://www.siamlms.online)**
+**[See Pro plans → www.siamlms.online](https://www.siamlms.online)**
 
 ---
 

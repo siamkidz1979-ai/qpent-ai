@@ -82,7 +82,7 @@ QPent Community **ไม่แถม** API key ของ AI มาให้ — 
 | วิเคราะห์เสริมด้วยฐานความรู้ (RAG) | — | ✅ |
 | การสนับสนุน & อัปเดต | ชุมชน | ลำดับความสำคัญสูง |
 
-**[ดูแพ็กเกจ Pro → qpent.siamlms.online](https://www.siamlms.online)**
+**[ดูแพ็กเกจ Pro → www.siamlms.online](https://www.siamlms.online)**
 
 ---
 
