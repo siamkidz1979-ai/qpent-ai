@@ -118,6 +118,32 @@ If you run models locally (via `OLLAMA_URL`), you need a higher-end machine depe
 - Allow **5–40 GB extra disk** for model files.
 - For many concurrent scans, scale CPU/RAM accordingly.
 
+## 🔐 Where your data lives + Backup
+
+**All your data stays on your own machine** — nothing is sent anywhere.
+
+- Scan results, vulnerabilities, users, reports → stored in **PostgreSQL on your host** (Docker volume `qpent-db-data`)
+- Only **LLM API calls** leave the machine — to the provider **you** configure (or a local Ollama = nothing leaves at all)
+- Your (sensitive) scan data **never flows back to the developer** 🔒
+
+**Data durability:**
+
+| Action | Data |
+|---|---|
+| `docker compose restart` / host reboot | ✅ preserved |
+| `docker compose down` then `up -d` | ✅ preserved |
+| `docker compose pull` + `up -d` (update) | ✅ preserved |
+| `docker compose down -v` (with `-v`) | ❌ deletes all data |
+
+**Backup / restore:**
+```bash
+# backup
+docker exec qpent-community-db pg_dump -U qpent -d qpent > qpent-backup-$(date +%F).sql
+# restore
+docker exec -i qpent-community-db psql -U qpent -d qpent < qpent-backup-YYYY-MM-DD.sql
+```
+> Backups are the user's responsibility (data is on your machine; the developer cannot recover it).
+
 ## 🔧 Configuration
 
 | Env var | Default | Purpose |
