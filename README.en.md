@@ -75,7 +75,7 @@ Then pick your model in **Settings** and start a scan.
 | Feature | Community (free) | Pro |
 |---|:---:|:---:|
 | AI-driven scanning | ✅ | ✅ |
-| Targets per scan | 5 IPs | Unlimited |
+| Targets per scan | 5 IPs | Depends on plan |
 | On-screen AI analysis | ✅ | ✅ |
 | LLM | your own key / Ollama | hosted for you |
 | Export reports (PDF / DOCX / CSV) | — | ✅ |
