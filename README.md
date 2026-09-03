@@ -1,114 +1,111 @@
 <div align="center">
 
+**ภาษาไทย** · [English](./README.en.md)
+
 # 🛡️ QPent Community Edition
 
-**AI-powered penetration testing — free, self-hosted, bring-your-own-LLM.**
+**เครื่องมือทดสอบเจาะระบบขับเคลื่อนด้วย AI — ฟรี ติดตั้งเองได้ ใช้ LLM ของคุณเอง**
 
-QPent drives real Kali tools with an AI agent that plans, scans, and explains
-findings for you. The Community edition is free for authorized security testing
-of systems **you own or are permitted to test**.
+QPent สั่งงานเครื่องมือ Kali จริงด้วย AI agent ที่วางแผน สแกน และอธิบายช่องโหว่ให้คุณอัตโนมัติ
+รุ่น Community ใช้ฟรีสำหรับการทดสอบความปลอดภัยของระบบที่ **คุณเป็นเจ้าของหรือได้รับอนุญาต** เท่านั้น
 
-[Upgrade to Pro →](https://qpent.siamlms.online)
+[อัปเกรดเป็น Pro →](https://qpent.siamlms.online)
 
 </div>
 
 ---
 
-## ⚠️ Authorized use only
+## ⚠️ ใช้กับระบบที่ได้รับอนุญาตเท่านั้น
 
-Penetration testing without the target owner's **written authorization** is
-illegal in most jurisdictions. By using QPent you agree to test only systems you
-own or have explicit permission to assess. You are solely responsible for how
-you use this tool. See [LICENSE](./LICENSE).
+การทดสอบเจาะระบบโดยไม่มี **หนังสืออนุญาต** จากเจ้าของระบบ ถือเป็นความผิดตามกฎหมายในเกือบทุกประเทศ
+เมื่อใช้ QPent คุณยอมรับว่าจะทดสอบเฉพาะระบบที่คุณเป็นเจ้าของหรือได้รับอนุญาตชัดเจนเท่านั้น
+คุณเป็นผู้รับผิดชอบการใช้งานแต่เพียงผู้เดียว (ดู [LICENSE](./LICENSE))
 
-Good legal practice targets while you learn: your own lab/VMs,
+เป้าหมายฝึกซ้อมที่ถูกกฎหมาย: เครื่อง/VM ของคุณเอง,
 [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/),
-`scanme.nmap.org`, and public pentest playgrounds.
+`scanme.nmap.org`, และสนามฝึก pentest สาธารณะต่าง ๆ
 
 ---
 
-## 🚀 Quick start
+## 🚀 เริ่มใช้งาน
 
-Requires Docker + Docker Compose.
+ต้องมี Docker + Docker Compose
 
 ```bash
-# 1. get the compose file
+# 1. ดาวน์โหลดไฟล์ compose
 curl -O https://raw.githubusercontent.com/siamkidz1979-ai/qpent-ai/main/docker-compose.yml
 
-# 2. run
+# 2. รัน
 docker compose up -d
 
-# 3. open the UI
+# 3. เปิดหน้าเว็บ
 #    http://localhost:7860
-#    login:  admin  /  admin@qpent   (you'll be forced to set a new password)
+#    เข้าสู่ระบบ:  admin  /  admin@qpent   (ระบบจะบังคับให้ตั้งรหัสใหม่ทันที)
 ```
 
-### Add your LLM (bring-your-own-key)
+### ใส่ LLM ของคุณเอง (bring-your-own-key)
 
-QPent Community does **not** ship an AI key — you plug in your own:
+QPent Community **ไม่แถม** API key ของ AI มาให้ — คุณใส่ของตัวเอง:
 
-1. Log in → **Settings → Providers**
-2. Add a key for any supported provider: **OpenAI, Anthropic (Claude),
+1. เข้าสู่ระบบ → **Settings → Providers**
+2. ใส่ key ของผู้ให้บริการที่รองรับ: **OpenAI, Anthropic (Claude),
    OpenRouter, Gemini, Mistral, Groq, DeepSeek, …**
-3. Or run it fully free & local with your own **Ollama** (uncomment `OLLAMA_URL`
-   in `docker-compose.yml`).
+3. หรือใช้ฟรี 100% ด้วย **Ollama** ในเครื่องคุณเอง (uncomment `OLLAMA_URL` ใน `docker-compose.yml`)
 
-Then pick your model in **Settings** and start a scan.
+จากนั้นเลือกโมเดลใน **Settings** แล้วเริ่มสแกนได้เลย
 
 ---
 
-## ✨ What you get (Community)
+## ✨ ความสามารถ (Community)
 
-- 🤖 AI agent that auto-selects and runs Kali tools (nmap, nikto, sqlmap,
+- 🤖 AI agent เลือกและรันเครื่องมือ Kali อัตโนมัติ (nmap, nikto, sqlmap,
   nuclei, whatweb, gobuster, ffuf, wfuzz, wafw00f, …)
-- 🧠 On-screen AI vulnerability analysis (severity, evidence, explanation)
-- 🖥️ Live terminal streaming of every command
-- 🔑 Bring-your-own-LLM (cloud API key or local Ollama)
-- 📄 View the system-generated report on screen
+- 🧠 วิเคราะห์ช่องโหว่ด้วย AI บนหน้าจอ (ระดับความรุนแรง, หลักฐาน, คำอธิบาย)
+- 🖥️ สตรีมคำสั่งที่รันสด ๆ ในเทอร์มินัล
+- 🔑 ใช้ LLM ของคุณเอง (API key คลาวด์ หรือ Ollama ในเครื่อง)
+- 📄 ดูรายงานที่ระบบสร้างบนหน้าจอได้
 
-> Community scans are limited to **5 target IPs per run**.
+> รุ่น Community สแกนได้สูงสุด **5 IP ต่อครั้ง**
 
-## 🆚 Community vs Pro
+## 🆚 เทียบ Community กับ Pro
 
-| Feature | Community (free) | Pro |
+| ความสามารถ | Community (ฟรี) | Pro |
 |---|:---:|:---:|
-| AI-driven scanning | ✅ | ✅ |
-| Targets per scan | 5 IPs | Unlimited |
-| On-screen AI analysis | ✅ | ✅ |
-| LLM | your own key / Ollama | hosted for you |
-| Export reports (PDF / DOCX / CSV) | — | ✅ |
-| Risk management + action plans | — | ✅ |
-| Compliance mapping (OWASP/ISO/PCI/HIPAA/PDPA/NIST) | — | ✅ |
-| OpenVAS / GVM + ZAP deep VA | — | ✅ |
-| Knowledge-base (RAG) augmented analysis | — | ✅ |
-| Support & updates | community | priority |
+| สแกนด้วย AI | ✅ | ✅ |
+| เป้าหมายต่อการสแกน | 5 IP | ไม่จำกัด |
+| วิเคราะห์ด้วย AI บนหน้าจอ | ✅ | ✅ |
+| LLM | key ของคุณเอง / Ollama | เราจัดให้ (hosted) |
+| ดาวน์โหลดรายงาน (PDF / DOCX / CSV) | — | ✅ |
+| บริหารความเสี่ยง + แผนแก้ไข | — | ✅ |
+| Compliance (OWASP/ISO/PCI/HIPAA/PDPA/NIST) | — | ✅ |
+| OpenVAS / GVM + ZAP (VA เชิงลึก) | — | ✅ |
+| วิเคราะห์เสริมด้วยฐานความรู้ (RAG) | — | ✅ |
+| การสนับสนุน & อัปเดต | ชุมชน | ลำดับความสำคัญสูง |
 
-**[See Pro plans → qpent.siamlms.online](https://qpent.siamlms.online)**
+**[ดูแพ็กเกจ Pro → qpent.siamlms.online](https://qpent.siamlms.online)**
 
 ---
 
-## 🔧 Configuration
+## 🔧 การตั้งค่า
 
-| Env var | Default | Purpose |
+| ตัวแปร Env | ค่าเริ่มต้น | หน้าที่ |
 |---|---|---|
-| `QPENT_EDITION` | `free` | keep as `free` for the Community edition |
-| `DATABASE_URL` | — | PostgreSQL (pgvector) connection string |
-| `OLLAMA_URL` | `http://localhost:11434` | point at your own Ollama (optional) |
-| `FREE_MAX_IPS` | `5` | max target IPs per scan |
-| `QPENT_ADMIN_PW` | `admin@qpent` | initial admin password (change on first login) |
+| `QPENT_EDITION` | `free` | คงไว้เป็น `free` สำหรับรุ่น Community |
+| `DATABASE_URL` | — | สตริงเชื่อมต่อ PostgreSQL (pgvector) |
+| `OLLAMA_URL` | `http://localhost:11434` | ชี้ไป Ollama ของคุณเอง (ไม่บังคับ) |
+| `FREE_MAX_IPS` | `5` | จำนวน IP สูงสุดต่อการสแกน |
+| `QPENT_ADMIN_PW` | `admin@qpent` | รหัส admin เริ่มต้น (เปลี่ยนตอน login ครั้งแรก) |
 
-## ❓ FAQ
+## ❓ คำถามที่พบบ่อย
 
-**Do I need to pay for an AI key?** No. Use your own provider key, or run a local
-Ollama model for free.
+**ต้องจ่ายค่า AI key ไหม?** ไม่ต้อง ใช้ key ผู้ให้บริการของคุณเอง หรือรัน Ollama ในเครื่องฟรีก็ได้
 
-**Is my data sent anywhere?** Scans run locally in your container. Only your LLM
-calls go to whichever provider *you* configure.
+**ข้อมูลถูกส่งออกไปไหนไหม?** การสแกนทำงานในเครื่อง/คอนเทนเนอร์ของคุณ มีเพียงการเรียก LLM เท่านั้นที่ส่งไปยังผู้ให้บริการที่ *คุณ* ตั้งค่าไว้
 
-**Can I scan more than 5 IPs?** That's a Pro feature — [upgrade here](https://qpent.siamlms.online).
+**สแกนเกิน 5 IP ได้ไหม?** เป็นฟีเจอร์ของ Pro — [อัปเกรดที่นี่](https://qpent.siamlms.online)
 
 ---
 
 <div align="center">
-<sub>© QPent. QPent Community Edition is distributed under a proprietary license — see <a href="./LICENSE">LICENSE</a>. Not affiliated with the Kali Linux / OffSec project; bundled tools remain under their own licenses.</sub>
+<sub>© QPent. QPent Community Edition เผยแพร่ภายใต้สัญญาอนุญาตแบบ proprietary — ดู <a href="./LICENSE">LICENSE</a> · ไม่ได้มีส่วนเกี่ยวข้องกับโครงการ Kali Linux / OffSec; เครื่องมือที่รวมมาอยู่ภายใต้สัญญาอนุญาตของตนเอง</sub>
 </div>
