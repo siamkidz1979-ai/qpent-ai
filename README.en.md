@@ -89,6 +89,33 @@ Then pick your model in **Settings** and start a scan.
 
 ---
 
+## 💻 System Requirements
+
+The Community edition is a small image (~860MB) and needs no GPU when you use a **cloud LLM via your own API key**.
+
+| | Minimum | Recommended |
+|---|---|---|
+| OS | Linux (Ubuntu 22.04+/Debian 12+) or Windows/macOS + Docker | Linux 64-bit |
+| CPU | 2 cores (x86_64 / arm64) | 4+ cores |
+| RAM | 4 GB | 8 GB+ |
+| Disk | 5 GB free (SSD) | 20 GB+ SSD |
+| Software | Docker 24+ and Docker Compose v2 | — |
+| Network | Internet (to reach the LLM API you configure) | — |
+
+### 🚀 Advanced spec — running the LLM locally (Ollama, no cloud)
+
+If you run models locally (via `OLLAMA_URL`), you need a higher-end machine depending on model size:
+
+| Model size | Min RAM / VRAM | Recommended GPU |
+|---|---|---|
+| Small (7–8B, e.g. `qwen2.5:7b`) | 8 GB+ | GPU ≥ 8GB VRAM or Apple Silicon (M1/M2/M3) |
+| Medium (14B) | 16 GB+ | GPU ≥ 12–16GB VRAM |
+| Large (30B+, e.g. `qwen3:30b`) | 32 GB+ | GPU ≥ 24GB VRAM (e.g. RTX 3090/4090) |
+
+- A **CUDA NVIDIA GPU** is recommended for speed — CPU-only works but is very slow.
+- Allow **5–40 GB extra disk** for model files.
+- For many concurrent scans, scale CPU/RAM accordingly.
+
 ## 🔧 Configuration
 
 | Env var | Default | Purpose |
