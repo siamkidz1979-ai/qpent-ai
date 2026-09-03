@@ -2,6 +2,8 @@
 
 **ภาษาไทย** · [English](./README.en.md)
 
+<img src="https://www.siamlms.online/logo.png" alt="Siam LMS" width="170"/>
+
 # 🛡️ QPent Community Edition
 
 **เครื่องมือทดสอบเจาะระบบขับเคลื่อนด้วย AI — ฟรี ติดตั้งเองได้ ใช้ LLM ของคุณเอง**
@@ -88,14 +90,14 @@ QPent Community **ไม่แถม** API key ของ AI มาให้ — 
 
 ## 💻 ความต้องการของระบบ
 
-รุ่น Community เป็น image ขนาดเล็ก (~860MB) ไม่ต้องใช้ GPU เมื่อใช้ **LLM ผ่าน API key ของคุณเอง (คลาวด์)**
+ความต้องการสำหรับติดตั้งและใช้งานจริง (รวมชุดเครื่องมือสแกน + ฐานข้อมูล):
 
 | | ขั้นต่ำ | แนะนำ |
 |---|---|---|
-| ระบบปฏิบัติการ | Linux (Ubuntu 22.04+/Debian 12+) หรือ Windows/macOS + Docker | Linux 64-bit |
-| CPU | 2 cores (x86_64 / arm64) | 4+ cores |
-| RAM | 4 GB | 8 GB+ |
-| ดิสก์ | 5 GB ว่าง (SSD) | 20 GB+ SSD |
+| ระบบปฏิบัติการ | Linux 64-bit (Ubuntu 22.04+/Debian 12+) | Linux 64-bit |
+| CPU | 16 cores (x86_64 / arm64) | 32+ cores |
+| RAM | 16 GB | 32 GB+ |
+| ดิสก์ | 500 GB SSD | 1 TB SSD ขึ้นไป |
 | ซอฟต์แวร์ | Docker 24+ และ Docker Compose v2 | — |
 | เครือข่าย | อินเทอร์เน็ต (สำหรับเรียก LLM API ที่คุณตั้งค่า) | — |
 

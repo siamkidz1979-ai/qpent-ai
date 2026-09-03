@@ -2,6 +2,8 @@
 
 [ภาษาไทย](./README.md) · **English**
 
+<img src="https://www.siamlms.online/logo.png" alt="Siam LMS" width="170"/>
+
 # 🛡️ QPent Community Edition
 
 **AI-powered penetration testing — free, self-hosted, bring-your-own-LLM.**
@@ -91,14 +93,14 @@ Then pick your model in **Settings** and start a scan.
 
 ## 💻 System Requirements
 
-The Community edition is a small image (~860MB) and needs no GPU when you use a **cloud LLM via your own API key**.
+Requirements for a real install (bundled scanning tools + database):
 
 | | Minimum | Recommended |
 |---|---|---|
-| OS | Linux (Ubuntu 22.04+/Debian 12+) or Windows/macOS + Docker | Linux 64-bit |
-| CPU | 2 cores (x86_64 / arm64) | 4+ cores |
-| RAM | 4 GB | 8 GB+ |
-| Disk | 5 GB free (SSD) | 20 GB+ SSD |
+| OS | Linux 64-bit (Ubuntu 22.04+/Debian 12+) | Linux 64-bit |
+| CPU | 16 cores (x86_64 / arm64) | 32+ cores |
+| RAM | 16 GB | 32 GB+ |
+| Disk | 500 GB SSD | 1 TB+ SSD |
 | Software | Docker 24+ and Docker Compose v2 | — |
 | Network | Internet (to reach the LLM API you configure) | — |
 
