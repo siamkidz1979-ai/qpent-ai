@@ -1,0 +1,41 @@
+# =============================================================================
+#  QPent Community (Free) Edition — one-command deploy
+#
+#    docker compose up -d
+#    → open http://localhost:7860   (login: admin / admin@qpent, then change it)
+#
+#  Bring your own LLM: after login, go to Settings → add an API key for your
+#  provider (OpenAI / Claude / OpenRouter / Gemini / …) OR point it at your own
+#  Ollama. QPent Community never bundles or requires a hosted AI key.
+# =============================================================================
+services:
+  qpent-db:
+    image: pgvector/pgvector:pg16
+    container_name: qpent-community-db
+    environment:
+      POSTGRES_USER: qpent
+      POSTGRES_PASSWORD: ${DB_PASS:-qpent_local_dev}
+      POSTGRES_DB: qpent
+    volumes:
+      - qpent-db-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  qpent:
+    image: ghcr.io/siamkidz1979-ai/qpent-ai:latest
+    container_name: qpent-community
+    depends_on:
+      - qpent-db
+    environment:
+      QPENT_EDITION: free
+      DATABASE_URL: postgresql://qpent:${DB_PASS:-qpent_local_dev}@qpent-db:5432/qpent
+      DB_BACKEND: postgres
+      # Optional: point at your own Ollama instead of adding a cloud API key.
+      # OLLAMA_URL: http://host.docker.internal:11434
+      # Optional: change the free per-scan IP cap (default 5).
+      # FREE_MAX_IPS: "5"
+    ports:
+      - "7860:7860"
+    restart: unless-stopped
+
+volumes:
+  qpent-db-data:

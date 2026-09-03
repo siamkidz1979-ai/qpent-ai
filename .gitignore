@@ -1,0 +1,17 @@
+# local env / secrets — never commit
+.env
+.env.*
+*.key
+*.pem
+*.log
+
+# runtime / data
+data/
+pgdata/
+*.pyc
+__pycache__/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

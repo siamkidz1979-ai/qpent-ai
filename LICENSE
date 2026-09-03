@@ -1,0 +1,56 @@
+QPent Community Edition — End User License Agreement (EULA)
+Copyright (c) 2026 QPent. All rights reserved.
+
+This repository distributes the QPent Community Edition software image
+("Software"). It is proprietary software provided free of charge under the terms
+below. It is NOT open-source software. By downloading, installing, running, or
+using the Software you ("You") agree to this Agreement. If you do not agree, do
+not use the Software.
+
+1. LICENSE GRANT
+   QPent grants You a personal, non-exclusive, non-transferable, revocable,
+   royalty-free license to run the Software for lawful security testing of
+   systems that You own or are explicitly authorized in writing to test.
+
+2. RESTRICTIONS
+   You may NOT: (a) redistribute, resell, sublicense, host as a service, or
+   rebundle the Software or its image; (b) reverse engineer, decompile, or
+   attempt to extract source, models, prompts, or other internal assets, except
+   to the extent this restriction is prohibited by applicable law; (c) remove or
+   circumvent edition limits, license checks, or feature gates; (d) use the
+   Software to develop a competing product; (e) use the Software for any unlawful
+   purpose.
+
+3. AUTHORIZED USE ONLY
+   Penetration testing and vulnerability scanning of systems without the owner's
+   authorization is illegal in many jurisdictions. You are solely responsible for
+   obtaining written authorization before testing any system and for complying
+   with all applicable laws. You assume all liability arising from Your use.
+
+4. THIRD-PARTY COMPONENTS
+   The Software bundles third-party open-source tools and libraries, each
+   licensed under its own terms. Those licenses continue to govern those
+   components. QPent claims no ownership over them.
+
+5. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+6. LIMITATION OF LIABILITY
+   TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL QPENT BE LIABLE FOR
+   ANY DAMAGES WHATSOEVER (INCLUDING DIRECT, INDIRECT, INCIDENTAL, SPECIAL, OR
+   CONSEQUENTIAL DAMAGES, LOSS OF DATA, OR BUSINESS INTERRUPTION) ARISING FROM
+   THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF ADVISED OF THE
+   POSSIBILITY OF SUCH DAMAGES.
+
+7. TERMINATION
+   This license terminates automatically if You breach any term. On termination
+   You must stop using and delete the Software.
+
+8. UPGRADES
+   Additional features (report export, risk management, compliance mapping, deep
+   vulnerability assessment, hosted AI, and more) are available under a separate
+   commercial license — https://qpent.siamlms.online
+
+Contact: https://qpent.siamlms.online
