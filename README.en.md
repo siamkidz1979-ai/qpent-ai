@@ -100,7 +100,7 @@ Requirements for a real install (bundled scanning tools + database):
 | OS | Linux 64-bit (Ubuntu 22.04+/Debian 12+) | Linux 64-bit |
 | CPU | 16 cores (x86_64 / arm64) | 32+ cores |
 | RAM | 16 GB | 32 GB+ |
-| Disk | 500 GB SSD | 1 TB+ SSD |
+| Disk | 350 GB  | 500 GB SSD |
 | Software | Docker 24+ and Docker Compose v2 | — |
 | Network | Internet (to reach the LLM API you configure) | — |
 
