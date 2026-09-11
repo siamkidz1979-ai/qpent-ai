@@ -97,7 +97,7 @@ QPent Community **ไม่แถม** API key ของ AI มาให้ — 
 | ระบบปฏิบัติการ | Linux 64-bit (Ubuntu 22.04+/Debian 12+) | Linux 64-bit |
 | CPU | 16 cores (x86_64 / arm64) | 32+ cores |
 | RAM | 16 GB | 32 GB+ |
-| ดิสก์ | 500 GB SSD | 1 TB SSD ขึ้นไป |
+| ดิสก์ | 350 GB  | 500 SSD ขึ้นไป |
 | ซอฟต์แวร์ | Docker 24+ และ Docker Compose v2 | — |
 | เครือข่าย | อินเทอร์เน็ต (สำหรับเรียก LLM API ที่คุณตั้งค่า) | — |
 
