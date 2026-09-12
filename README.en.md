@@ -98,7 +98,7 @@ Requirements for a real install (bundled scanning tools + database):
 | | Minimum | Recommended |
 |---|---|---|
 | OS | Linux 64-bit (Ubuntu 22.04+/Debian 12+) | Linux 64-bit |
-| CPU | 16 cores (x86_64 / arm64) | 32+ cores |
+| CPU | 8 cores (x86_64 / arm64) | 32+ cores |
 | RAM | 16 GB | 32 GB+ |
 | Disk | 350 GB  | 500+ SSD |
 | Software | Docker 24+ and Docker Compose v2 | — |
