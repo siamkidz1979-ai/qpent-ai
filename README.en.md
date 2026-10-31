@@ -110,7 +110,7 @@ If you run models locally (via `OLLAMA_URL`), you need a higher-end machine depe
 
 | Model size | Min RAM / VRAM | Recommended GPU |
 |---|---|---|
-| Small (7–8B, e.g. `qwen2.5:7b`) | 8 GB+ | GPU ≥ 8GB VRAM or Apple Silicon (M1/M2/M3) |
+| Small (7–8B, e.g. `qwen2.5:7b`) | 8 GB+ | GPU ≥ 8GB VRAM  |
 | Medium (14B) | 16 GB+ | GPU ≥ 12–16GB VRAM |
 | Large (30B+, e.g. `qwen3:30b`) | 32 GB+ | GPU ≥ 24GB VRAM (e.g. RTX 3090/4090) |
 
