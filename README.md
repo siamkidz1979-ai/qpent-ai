@@ -107,7 +107,7 @@ QPent Community **ไม่แถม** API key ของ AI มาให้ — 
 
 | ขนาดโมเดล | RAM / VRAM ขั้นต่ำ | GPU ที่แนะนำ |
 |---|---|---|
-| เล็ก (7–8B เช่น `qwen2.5:7b`) | 8 GB+ | GPU ≥ 8GB VRAM หรือ Apple Silicon (M1/M2/M3) |
+| เล็ก (7–8B เช่น `qwen2.5:7b`) | 8 GB+ | GPU ≥ 8GB VRAM  |
 | กลาง (14B) | 16 GB+ | GPU ≥ 12–16GB VRAM |
 | ใหญ่ (30B+ เช่น `qwen3:30b`) | 32 GB+ | GPU ≥ 24GB VRAM (เช่น RTX 3090/4090) |
 
